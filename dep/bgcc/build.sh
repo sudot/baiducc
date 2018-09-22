@@ -22,7 +22,7 @@ if [ -f ${SRCTAR} -a -f "output/include/bgcc.h" -a -f "output/include/openssl/ss
 fi
 
 if [ ! -f ${SRCTAR} ]; then
-    curl --connect-timeout 10 --location-trusted -k -O https://github.com/BaiduCC/BGCC/archive/${SRCTAR}
+    curl --connect-timeout 10 --location-trusted -k -O https://github.com/sudot/BGCC/archive/${SRCTAR}
 fi
 
 if [ $? != 0 -o ! -f ${SRCTAR} ]; then
